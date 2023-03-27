@@ -2,9 +2,9 @@
 
 ## Unidad 2. Redes Neuronales Artificiales
 
-Conteniudo
+Contenido
 
-* [Perceptron](#perceptrón)
+* [Perceptrón](#perceptrón)
 * [Backpropagation]()
 
 ### Perceptrón
