@@ -35,9 +35,9 @@ De manera formal podemos exponer ester problema como una tarea de clasificación
 w = \begin{bmatrix} w_1 \\ \vdots \\ w_m
 \end{bmatrix}
 
-$w = \begin{bmatrix} w_1 \\ \vdots \\ w_m
-\end{bmatrix}$, $x = \begin{bmatrix} x_1 \\ \vdots \\ x_m
-\end{bmatrix}$
+w = \begin{bmatrix} w_1 \\ \vdots \\ w_m
+\end{bmatrix}, x = \begin{bmatrix} x_1 \\ \vdots \\ x_m
+\end{bmatrix}
 ```
 
 ## 2. Fuciones de activación
@@ -154,7 +154,9 @@ Es importante notar que la convergencia del perceptrón es solamente garantizada
 
 ## 5. Implementación de Perceptrón con SciKit-Learn
 
-* [`Ejemplo`](./code/perceptron_sklrn_iris.ipynb)
-* [Práctica 2. ]()
+La librería Scikit-Learn implementa algoritmos de clasificación, regresión, agrupación y reducción de dimensionalidad. Incluye una versión del Perceptrón. Para más deatalles visiar la documentación del [Perceptron](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.Perceptron.html).
+
+* [`Ejemplo 1`](./code/perceptron_sklrn_iris.ipynb)
+* [`Práctica 2. `]()
 
 [`Anterior`](../README.md) | [`Siguiente`](../README.md)
