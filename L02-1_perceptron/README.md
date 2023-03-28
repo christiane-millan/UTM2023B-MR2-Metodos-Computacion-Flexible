@@ -29,6 +29,17 @@ En esta clase el alumno conocerá:
 <img src="./img/perceptron.png" align="center" hspace="10">
 <div style="text-align: justify;">
 
+De manera formal podemos exponer ester problema como una tarea de clasificación binaria donde nos referimos a nuestras dos clases como 1(clase positiva) y -1 (la clase negativa) por simplicidad. Podemos definir la función de activación $\varphi(z) $ que toma la combinación lineal de ciertos valores de entrada $x$ y un correspondiente vector de pesos $w$, donde $z$ es llamada la salida de la red $z=w_1x_1 + \ldots + w_mx_m$
+
+```math
+w = \begin{bmatrix} w_1 \\ \vdots \\ w_m
+\end{bmatrix}
+
+$w = \begin{bmatrix} w_1 \\ \vdots \\ w_m
+\end{bmatrix}$, $x = \begin{bmatrix} x_1 \\ \vdots \\ x_m
+\end{bmatrix}$
+```
+
 ## 2. Fuciones de activación
 
 Ahora, si la salida de activación de un ejemplo en particular $x^{(i)}$, eso es, la salida de $\varphi(z)$, es mayor que el umbral definido $\theta$, lo predecimos como de la clase 1 y clase -1 de otro modo. En el algoritmo del perceptrón, la función de activación $\varphi(\cdot)$ es una simple función de paso de unidad, la cual algunas veces es llamada función de paso Heaviside:
@@ -37,22 +48,28 @@ Ahora, si la salida de activación de un ejemplo en particular $x^{(i)}$, eso es
 \varphi(z)= 
 \left\{ 
 \begin{matrix} 
-1 & \text{si }v \geq 0 \\
-0  & \text{si }v < 0
+1 & \text{si }v \geq \theta \\
+0  & \text{en otro caso }
 \end{matrix} 
 \right.
 ```
+
 o
 
 ```math
-\varphi(v)= \left \{ \begin{matrix} 
-1 & \text{si }v \geq 0\\ -1 & \text{en otro caso}
+\varphi(v)=
+\left\{
+\begin{matrix} 
+1 & \text{si }v \geq \theta \\
+-1 & \text{en otro caso}
 \end{matrix} \right.
 ```
 
 Por simplicidad, podemos traer el umbral $\theta$ al lado izquierdo de la ecuación y definir a peso-cero como $w_0 = -\theta$ y $x_0= 1$, por lo tanto escribimos $z$ en una forma más compacta desde:
 
-$z= w_0x_0 + w_1x_1+ \ldots+w_m x_m = w^Tx$  y
+$z= w_0x_0 + w_1x_1+ \ldots+w_m x_m = w^Tx$  
+
+y
 
 ```math
 \varphi(v)= \left \{ \begin{matrix} 
