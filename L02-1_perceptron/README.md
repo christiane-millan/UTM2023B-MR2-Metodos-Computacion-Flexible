@@ -42,7 +42,7 @@ $w = \begin{bmatrix} w_1 \\ \vdots \\ w_m
 
 ## 2. Fuciones de activación
 
-Ahora, si la salida de activación de un ejemplo en particular $x^{(i)}$, eso es, la salida de $\varphi(z)$, es mayor que el umbral definido $\theta$, lo predecimos como de la clase 1 y clase -1 de otro modo. En el algoritmo del perceptrón, la función de activación $\varphi(\cdot)$ es una simple función de paso de unidad, la cual algunas veces es llamada función de paso Heaviside:
+Ahora, si la salida de activación de un ejemplo en particular $x^{(i)}$, es decir, que si la salida de $\varphi(z)$, es mayor que el umbral definido $\theta$, se puede predecir como un ejemplo de la clase 1 y en caso contrario de la clase -1. En el algoritmo del perceptrón, la función de activación $\varphi(\cdot)$ es una simple función de paso de unidad, la cual algunas veces es llamada función de paso Heaviside:
 
 ```math
 \varphi(z)= 
@@ -77,15 +77,15 @@ y
 \end{matrix} \right.
 ```
 
-En la siguiente figura ilustra como la salida de la red $z=w^T x$ es compactada en una salida binaria (-1 o 1) por la función de aptitud del perceptrón y cómo puede ser usada para descriminar entre dos clases linealmente separables:
+En la siguiente figura se ilustra como la salida de la red $z=w^T x$ es reducida a una salida binaria (-1 o 1) por la función de activación del perceptrón y cómo puede ser usada para descriminar entre dos clases linealmente separables:
 
 ![activation_function](img/Untitled.png)
 
 ## 3. Ajuste de pesos por Descenso Escalonado
 
-La idea completa detrás de la neurona MCP y el modelo del perceptrón con umbral de Rosenblantt es usar un enfoque de reducción para imitar como una sola neurona del cerebro funciona: si esta se activa o no. Por lo tanto, la regla inicial del perceptrón de Rosemblantt is justamente muy simple, y el algoritmo del perceptrón puede ser resumido en los siguientes pasos:
+La idea completa detrás de la neurona MCP y el modelo del perceptrón con umbral de Rosenblantt es de utilizar un enfoque de reducción para imitar como una sola neurona del cerebro funciona: si esta se activa o no. Por lo tanto, la regla inicial del perceptrón de Rosemblantt es justamente muy simple. El algoritmo del perceptrón puede ser resumido en los siguientes pasos:
 
-1. Inicializar los pesos a 0 o un valor random pequeño.  
+1. Inicializar los pesos a $0$ o un valor random pequeño.  
 2. Para cada ejemplo del entrenamiento, $x^{(i)}$:
     1. Calcular el valor de salida, $\hat{y}$
     2. Actualizar los pesos
@@ -100,11 +100,11 @@ $\Delta w_j = \eta(y^{(i)} - \hat{y}^{(i)})$
 
 Donde $\eta$ es la tasa de aprendizaje (una constante típicamente entre 0.0 y 1.0)
 
-$y^{(i)}$ es la etiqueta de clase verdadera para el i-ésimo ejemplo de entrenamiento, y 
+$y^{(i)}$ es la etiqueta de clase verdadera para el i-ésimo ejemplo de entrenamiento, y
 
 $\hat{y}^{(i)}$ es la predicción de la etiqueta de clase.
 
-Es importante notar que todos los pesos en el vector de pesos son actualizados simultáneamente, lo cual significa que no se vuelve a calcular la predicción de la etiqueta, $\hat{y}^{(i)}$, antes de que todos los pesos son actualizados a través de la respectivos valores de actualización , $\Delta w_j$.
+Es importante notar que todos los pesos en el vector de pesos son actualizados simultáneamente, lo cual significa que no se vuelve a calcular la predicción de la etiqueta, $\hat{y}^{(i)}$, hasta  que todos los pesos son actualizados a través de los respectivos valores de actualización, $\Delta w_j$.
 
 Concretamente, para una conjunto de datos de dos dimensiones, se realizan las actualizaciones como:
 
@@ -114,13 +114,13 @@ $\Delta w_1 = \eta (y^{(i)} - output^{(i)})x_1^{(i)}$
 
 $\Delta w_2 = \eta (y^{(i)} - output^{(i)})x_2^{(i)}$
 
-Antes de implementar la regla del perceptrón en Python, realizaremos un experimento para demostrar la belleza de esta regla. En los dos escenarios donde el perceptrón predice la etiqueta de la clase correctamente, los pesos se mantienen sin cambios, debido a que los valores de actualización son cero:
+Realizaremos un experimento para demostrar la belleza de esta regla. En los dos escenarios donde el perceptrón predice la etiqueta de la clase correctamente, los pesos se mantienen sin cambios, debido a que los valores de actualización son cero:
 
 (1) $y^{(i)} = -1$, $\hat{y}^{(i)}= -1$, $\Delta w_j= \eta(-1-(-1))x_j^{(i)}= 0$
 
 (2) $y^{(i)} = 1$, $\hat{y}^{(i)}= 1$, $\Delta w_j= \eta(1-1)x_j^{(i)}= 0$
 
-Sin embargo, en el caso de una predicción incorrecta, los pesos serán movidos  hacia la dirección positiva o negativa de la clase objetivo :
+Sin embargo, en el caso de una predicción incorrecta, los pesos serán movidos hacia la dirección positiva o negativa de la clase objetivo:
 
 (3) $y^{(i)} = 1$, $\hat{y}^{(i)}= -1$, $\Delta w_j= \eta(1-(-1))x_j^{(i)}= \eta(2)x_j^{(i)}$
 
@@ -142,7 +142,7 @@ El peso actualizado es proporcional a el valor de $x_j^{(i)}$. Por ejemplo, si s
 
 $\Delta w_j= (1^{(i)}-(-1)^{(i)})2^{(i)}=(2)2^{(i)}=4$
 
-* [Ejemplo](./code/perceptron-example.ipynb) 
+* [Ejemplo del aprendizaje paso a paso](./code/perceptron-example.ipynb) 
 * [Práctica 1. Aprendizaje del perceptrón](./code/01-practice-perceptron/README.md)
 
 ## 4. El problema de representación
