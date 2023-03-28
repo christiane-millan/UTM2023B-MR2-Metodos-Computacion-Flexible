@@ -81,6 +81,7 @@ En la siguiente figura se ilustra como la salida de la red $z=w^T x$ es reducida
 
 ![activation_function](img/Untitled.png)
 
+
 ## 3. Ajuste de pesos por Descenso Escalonado
 
 La idea completa detrás de la neurona MCP y el modelo del perceptrón con umbral de Rosenblantt es de utilizar un enfoque de reducción para imitar como una sola neurona del cerebro funciona: si esta se activa o no. Por lo tanto, la regla inicial del perceptrón de Rosemblantt es justamente muy simple. El algoritmo del perceptrón puede ser resumido en los siguientes pasos:
@@ -142,7 +143,7 @@ El peso actualizado es proporcional a el valor de $x_j^{(i)}$. Por ejemplo, si s
 
 $\Delta w_j= (1^{(i)}-(-1)^{(i)})2^{(i)}=(2)2^{(i)}=4$
 
-* [Ejemplo del aprendizaje paso a paso](./code/perceptron-example.ipynb) 
+* [Ejemplo del aprendizaje paso a paso](./code/perceptron-example.ipynb)
 * [Práctica 1. Aprendizaje del perceptrón](./code/01-practice-perceptron/README.md)
 
 ## 4. El problema de representación
