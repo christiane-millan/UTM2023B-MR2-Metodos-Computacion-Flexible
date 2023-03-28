@@ -1,13 +1,19 @@
-[`Métodos de Computación Flexible`](../README.md) > `2. Redes Neuronales Artificiales`
+[`Métodos de Computación Flexible`](../README.md) > `2. Redes Neuronales Artificiales - Perceptrón`
 
-## Unidad 2. Redes Neuronales Artificiales
+# Unidad 2. Redes Neuronales Artificiales - Perceptrón
 
-Contenido
+## Contenido
 
-* [Perceptrón](#perceptrón)
-* [Backpropagation]()
+- [Unidad 2. Redes Neuronales Artificiales - Perceptrón](#unidad-2-redes-neuronales-artificiales---perceptrón)
+  - [Contenido](#contenido)
+  - [Objetivo](#objetivo)
+  - [1. Estructura básica](#1-estructura-básica)
+  - [2. Fuciones de activación](#2-fuciones-de-activación)
+  - [3. Ajuste de pesos por Descenso Escalonado](#3-ajuste-de-pesos-por-descenso-escalonado)
+  - [4. El problema de representación](#4-el-problema-de-representación)
+  - [5. Implementación de Perceptrón con SciKit-Learn](#5-implementación-de-perceptrón-con-scikit-learn)
 
-### Perceptrón
+## Objetivo
 
 En esta clase el alumno conocerá:
 
@@ -16,7 +22,7 @@ En esta clase el alumno conocerá:
 * La regla para realizar el ajuste de los pesos.
 * El problema relacionado con la representación del límite de decisión del perceptrón.
 
-### 1. Estructura básica
+## 1. Estructura básica
 
 * 1943 - McCullock & Pitts (MCP) describen un célula nerviosa como una simple compuerta lógica nerviosa con salidas binarias.
 
@@ -25,7 +31,7 @@ En esta clase el alumno conocerá:
 <img src="./img/perceptron.png" align="center" hspace="10">
 <div style="text-align: justify;">
 
-### 2. Fuciones de activación
+## 2. Fuciones de activación
 
 Ahora, si la salida de activación de un ejemplo en particular $x^{(i)}$, eso es, la salida de $\varphi(z)$, es mayor que el umbral definido $\theta$, lo predecimos como de la clase 1 y clase -1 de otro modo. En el algoritmo del perceptrón, la función de activación $\varphi(\cdot)$ es una simple función de paso de unidad, la cual algunas veces es llamada función de paso Heaviside:
 
@@ -60,7 +66,7 @@ En la siguiente figura ilustra como la salida de la red $z=w^T x$ es compactada 
 
 ![activation_function](img/Untitled.png)
 
-### 3. Ajuste de pesos por Descenso Escalonado
+## 3. Ajuste de pesos por Descenso Escalonado
 
 La idea completa detrás de la neurona MCP y el modelo del perceptrón con umbral de Rosenblantt es usar un enfoque de reducción para imitar como una sola neurona del cerebro funciona: si esta se activa o no. Por lo tanto, la regla inicial del perceptrón de Rosemblantt is justamente muy simple, y el algoritmo del perceptrón puede ser resumido en los siguientes pasos:
 
@@ -124,13 +130,13 @@ $\Delta w_j= (1^{(i)}-(-1)^{(i)})2^{(i)}=(2)2^{(i)}=4$
 * [Ejemplo](./code/perceptron-example.ipynb) 
 * [Práctica 1. Aprendizaje del perceptrón](./code/01-practice-perceptron/README.md)
 
-### 4. El problema de representación
+## 4. El problema de representación
 
 Es importante notar que la convergencia del perceptrón es solamente garantizada si las dos clases son linealmente separables y la tasa de aprendizaje es suficientemente pequeña. Si las dos clases no pueden ser separadas por un límite de decisión lineal, podremos solo especificar un número máximo de pasadas sobre el conjunto de entrenamiento (épocas) o un umbral para el número de clasificaciones incorrectas toleradas, el perceptrón podría nunca parar de actualizar los pesos de otro modo. 
 
 ![separable](./img/separable.png)
 
-### Implementación de Perceptrón con SciKit-Learn
+## 5. Implementación de Perceptrón con SciKit-Learn
 
 * [`Ejemplo`](./code/perceptron_sklrn_iris.ipynb)
 * [Práctica 2. ]()
