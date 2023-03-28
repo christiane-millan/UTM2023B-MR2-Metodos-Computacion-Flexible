@@ -50,10 +50,10 @@ Por simplicidad, podemos traer el umbral $\theta$ al lado izquierdo de la ecuaci
 
 $z= w_0x_0 + w_1x_1+ \ldots+w_m x_m = w^Tx$  y
 
-```math 
-$\varphi(v)= \left\{ \begin{matrix} 
-1 & \text{si }v \geq 0\\ -1 & \text{en otro caso}
-\end{matrix} \right.$
+```math
+\varphi(v)= \left \{ \begin{matrix} 
+1 & \text{si }v \geq 0 \\ -1 & \text{en otro caso}
+\end{matrix} \right.
 ```
 
 En la siguiente figura ilustra como la salida de la red $z=w^T x$ es compactada en una salida binaria (-1 o 1) por la función de aptitud del perceptrón y cómo puede ser usada para descriminar entre dos clases linealmente separables:
