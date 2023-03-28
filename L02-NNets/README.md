@@ -9,10 +9,10 @@
 
 En esta clase el alumno conocerá:
 
-La estructura básica del MLP.
-Las funciones de activación que pueden ser utilizadas en una neurona.
-El algoritmo Feedforward
-EL algoritmo de Backpropagtion (online y batch)
+* La estructura básica del MLP.
+* Las funciones de activación que pueden ser utilizadas en una neurona.
+* El algoritmo Feedforward
+* El algoritmo de Backpropagtion (online y batch)
 
 ## Introducción
 
@@ -34,7 +34,7 @@ Estas redes tienen un tipo especial de conexión entre capas llamado MLP.
 
 Función de costo: Error Cuadrático Medio (MSE, Mean Square Error).
 
-$MSE_{NN} = \frac{1}{2} \Sigma_{i=0}^m (target_i - a_i^{(out))})^2$
+$MSE_{NN} = \frac{1}{2} \sum_{i=0}^m (target_i - a_i^{(out))})^2$
 
 Función de costo:
 
@@ -49,14 +49,10 @@ Tipos de entrenamientos:
 * Minibach
 
 * [`Ejemplo Online`](./code/brackpropagation_online.ipynb)
-
-### Implementación backprogation batch
+* [`Ejemplo Bach`]()
 
 * [`Ejemplo Batch`](./code/MLP_batch_own.ipynb)
-
-### Implementación RN en keras
-
-* [`Ejemplo Keras`](./code/MLP_Keras.ipynb)
+* [`Ejemplo Bach Keras`](./code/MLP_Keras.ipynb)
 
 ## 3. Algoritmos de retropagación modificados
 
@@ -64,11 +60,13 @@ Tipos de entrenamientos:
 
 EL término de regularización permite reducir el grado de overfitting, el término de regularización L2 es definido como (no regularizan las unidades bias):
 
-$L2= \lambda||w||^2_2 = \lambda \sum_{j=1}^m wj^2$
+$L2= \lambda||w||^2_2 = \lambda \sum_{j=1}^m w_j^2$
 
 Mediante la agregación del término de regularización la función de costo logística se obtiene la siguiente ecuación:
 
 $J(w) = - \sum_{i=1}^n y^{[i]} log(a^{[i]}) + (1 -y^{[i]})\, log(1-a^{[i]}) + \lambda||w||^2_2 = \lambda \sum_{j=1}^m wj^2$
+
+### Implementación de scikit-learn
 
 
 [`Anterior`](../L02-1_perceptron/README.md) | [`Siguiente`](../README.md)
