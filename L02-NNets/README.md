@@ -30,7 +30,7 @@ En esta clase el alumno conocerá:
 Ahora, si la salida de activación de un ejemplo en particular $x^{(i)}$, eso es, la salida de $\varphi(z)$, es mayor que el umbral definido $\theta$, lo predecimos como de la clase 1 y clase -1 de otro modo. En el algoritmo del perceptrón, la función de activación $\varphi(\cdot)$ es una simple función de paso de unidad, la cual algunas veces es llamada función de paso Heaviside:
 
 $\varphi(z)= 
-\left{ 
+\left\{ 
 \begin{matrix} 
 1 & \text{si }v \geq 0 \\
 0  & \text{si }v < 0
