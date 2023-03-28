@@ -157,6 +157,6 @@ Es importante notar que la convergencia del perceptrón es solamente garantizada
 La librería Scikit-Learn implementa algoritmos de clasificación, regresión, agrupación y reducción de dimensionalidad. Incluye una versión del Perceptrón. Para más deatalles visiar la documentación del [Perceptron](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.Perceptron.html).
 
 * [`Ejemplo 1`](./code/perceptron_sklrn_iris.ipynb)
-* [`Práctica 2. `]()
+* [`Práctica 2.`]()
 
 [`Anterior`](../README.md) | [`Siguiente`](../README.md)
