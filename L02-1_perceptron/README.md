@@ -29,7 +29,7 @@ En esta clase el alumno conocerá:
 <img src="./img/perceptron.png" align="center" hspace="10">
 <div style="text-align: justify;">
 
-De manera formal podemos exponer ester problema como una tarea de clasificación binaria donde nos referimos a nuestras dos clases como 1(clase positiva) y -1 (la clase negativa) por simplicidad. Podemos definir la función de activación $\varphi(z) $ que toma la combinación lineal de ciertos valores de entrada $x$ y un correspondiente vector de pesos $w$, donde $z$ es llamada la salida de la red $z=w_1x_1 + \ldots + w_mx_m$
+De manera formal podemos exponer ester problema como una tarea de clasificación binaria donde nos referimos a nuestras dos clases como 1(clase positiva) y -1 (la clase negativa) por simplicidad. Podemos definir la función de activación $\varphi(z)$ que toma la combinación lineal de ciertos valores de entrada $x$ y un correspondiente vector de pesos $w$, donde $z$ es llamada la salida de la red $z=w_1x_1 + \ldots + w_mx_m$
 
 ```math
 w = \begin{bmatrix} w_1 \\ \vdots \\ w_m
