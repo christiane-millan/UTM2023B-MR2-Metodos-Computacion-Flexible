@@ -157,6 +157,6 @@ Es importante notar que la convergencia del perceptrón es solamente garantizada
 La librería Scikit-Learn implementa el Perceptrón. Para más deatalles visiar la documentación [Perceptron](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.Perceptron.html).
 
 * [`Ejemplo 2. Perceptron scikit-learn`](./code/02-perceptron_sklearn_iris.ipynb)
-* [`Práctica 2`]()
+* [`Práctica 2`](./code/02-pr_ppn_breast_cancer.ipynb)
 
 [`Anterior`](../README.md) | [`Siguiente`](../README.md)
