@@ -11,9 +11,9 @@ El estudiante conocerá las estrategias de computación no tradicional que tiene
 
 ## Contenido
 
-### [Unidad 2.Redes Neuronales Artificiales](./L02-NNets/README.md)
+### Unidad 2.Redes Neuronales Artificiales
 
-* Perceptrón
+* [Perceptrón](./L02-1_perceptron/README.md)
 * Backpropagation
 * Red Kohonen
   
