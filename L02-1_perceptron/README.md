@@ -143,7 +143,7 @@ El peso actualizado es proporcional a el valor de $x_j^{(i)}$. Por ejemplo, si s
 
 $\Delta w_j= (1^{(i)}-(-1)^{(i)})2^{(i)}=(2)2^{(i)}=4$
 
-* [Ejemplo del aprendizaje paso a paso](./code/perceptron-example.ipynb)
+* [Ejemplo del aprendizaje paso a paso](./code/00-perceptron_example.ipynb)
 * [Práctica 1. Aprendizaje del perceptrón](./code/01-practice-perceptron/README.md)
 
 ## 4. El problema de representación
