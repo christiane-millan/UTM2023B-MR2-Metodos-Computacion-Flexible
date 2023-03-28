@@ -2,18 +2,16 @@
 
 # Unidad 2. Redes Neuronales Artificiales - Perceptrón
 
-## Contenido
+**Contenido.**
 
 - [Unidad 2. Redes Neuronales Artificiales - Perceptrón](#unidad-2-redes-neuronales-artificiales---perceptrón)
-  - [Contenido](#contenido)
-  - [Objetivo](#objetivo)
   - [1. Estructura básica](#1-estructura-básica)
   - [2. Fuciones de activación](#2-fuciones-de-activación)
   - [3. Ajuste de pesos por Descenso Escalonado](#3-ajuste-de-pesos-por-descenso-escalonado)
   - [4. El problema de representación](#4-el-problema-de-representación)
   - [5. Implementación de Perceptrón con SciKit-Learn](#5-implementación-de-perceptrón-con-scikit-learn)
 
-## Objetivo
+**Objetivo.**
 
 En esta clase el alumno conocerá:
 
