@@ -58,7 +58,7 @@ $L2= \lambda||w||^2_2 = \lambda \Sigma_{j=1}^m w_j^2$
 
 Mediante la agregación del término de regularización la función de costo logística se obtiene la siguiente ecuación:
 
-$J(w) = - \Sigma_{i=1}^n y^{[i]} log(a^{[i]}) + (1 -y^{[i]})\, log(1-a^{[i]}) +  \lambda \Sigma_{j=1}^m wj^2$
+$J(w) = - \Sigma_{i=1}^n y^{[i]} \cdot log(a^{[i]}) + (1 -y^{[i]}) \cdot log(1-a^{[i]}) +  \lambda \Sigma_{j=1}^m wj^2$
 
 ### Implementación de scikit-learn
 
