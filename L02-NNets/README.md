@@ -38,7 +38,7 @@ $MSE_{NN} = \frac{1}{2} \sum_{i=0}^m (target_i - a_i^{(out))})^2$
 
 Función de costo:
 
-$J(w) = - \sum_{i=1}^n y^{[i]} log(a^{[i]}) + (1 -y^{[i]})\, log(1-a^{[i]})$
+$J(w) = - \sum_{i=1}^n y^{[i]}\cdot log(a^{[i]}) + (1 -y^{[i]}) \cdot log(1-a^{[i]})$
 
 ## 2. Backpropagation
 
