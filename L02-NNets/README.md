@@ -44,14 +44,8 @@ $J(w) = - \sum_{i=1}^n y^{[i]} log(a^{[i]}) + (1 -y^{[i]})\, log(1-a^{[i]})$
 
 Tipos de entrenamientos:
 
-* Online
-* Bach
-* Minibach
-
 * [`Ejemplo Online`](./code/brackpropagation_online.ipynb)
-* [`Ejemplo Bach`]()
-
-* [`Ejemplo Batch`](./code/MLP_batch_own.ipynb)
+* [`Ejemplo Minibatch`](./code/MLP_batch_own.ipynb)
 * [`Ejemplo Bach Keras`](./code/MLP_Keras.ipynb)
 
 ## 3. Algoritmos de retropagación modificados
