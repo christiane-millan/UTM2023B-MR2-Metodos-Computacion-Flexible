@@ -54,7 +54,7 @@ Tipos de entrenamientos:
 
 EL término de regularización permite reducir el grado de overfitting, el término de regularización L2 es definido como (no regularizan las unidades bias):
 
-$L2= \lambda||w||^2_2 = \lambda \sum_{j=1}^m w_j^2$
+$L2= \lambda||w||^2_2 = \lambda \Sigma_{j=1}^m w_j^2$
 
 Mediante la agregación del término de regularización la función de costo logística se obtiene la siguiente ecuación:
 
