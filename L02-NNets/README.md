@@ -34,11 +34,11 @@ Estas redes tienen un tipo especial de conexión entre capas llamado MLP.
 
 Función de costo: Error Cuadrático Medio (MSE, Mean Square Error).
 
-$MSE_{NN} = \frac{1}{2} \sum_{i=0}^m (target_i - a_i^{(out))})^2$
+$MSE_{NN} = \frac{1}{2} \Sigma_{i=0}^m (target_i - a_i^{(out))})^2$
 
 Función de costo:
 
-$J(w) = - \sum_{i=1}^n y^{[i]}\cdot log(a^{[i]}) + (1 -y^{[i]}) \cdot log(1-a^{[i]})$
+$J(w) = - \Sigma_{i=1}^n y^{[i]}\cdot log(a^{[i]}) + (1 -y^{[i]}) \cdot log(1-a^{[i]})$
 
 ## 2. Backpropagation
 
@@ -58,7 +58,7 @@ $L2= \lambda||w||^2_2 = \lambda \sum_{j=1}^m w_j^2$
 
 Mediante la agregación del término de regularización la función de costo logística se obtiene la siguiente ecuación:
 
-$J(w) = - \sum_{i=1}^n y^{[i]} log(a^{[i]}) + (1 -y^{[i]})\, log(1-a^{[i]}) + \lambda||w||^2_2 = \lambda \sum_{j=1}^m wj^2$
+$J(w) = - \Sigma_{i=1}^n y^{[i]} log(a^{[i]}) + (1 -y^{[i]})\, log(1-a^{[i]}) + \lambda||w||^2_2 = \lambda \sum_{j=1}^m wj^2$
 
 ### Implementación de scikit-learn
 
