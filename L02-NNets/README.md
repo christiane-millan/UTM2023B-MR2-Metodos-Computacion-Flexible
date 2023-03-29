@@ -68,5 +68,7 @@ $J(w) = - \sum_{i=1}^n y^{[i]} log(a^{[i]}) + (1 -y^{[i]})\, log(1-a^{[i]}) + \l
 
 ### Implementación de scikit-learn
 
+* [`Ejemplo MLP Scikit-Learn`](./code/mlp_sklrn_bcancer.ipynb)
+
 
 [`Anterior`](../L02-1_perceptron/README.md) | [`Siguiente`](../README.md)
