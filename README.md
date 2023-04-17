@@ -15,7 +15,7 @@ El estudiante conocerá las estrategias de computación no tradicional que tiene
 
 * [Perceptrón](./L02-1_perceptron/README.md)
 * [Backpropagation](./L02-NNets/README.md)
-* Red Kohonen
+* [Red Kohonen](./L02-3_SOM/README.md)
   
 ### [Unidad 3. Lógica Difusa]()
 

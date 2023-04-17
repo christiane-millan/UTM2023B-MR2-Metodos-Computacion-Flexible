@@ -1,9 +1,17 @@
 [`Métodos de Computación Flexible`](../README.md) > `2. Redes Neuronales Artificiales - Backprogation`
 
-#  Unidad 2. Redes Neuronales Artificiales - Backpropagation
+# Unidad 2. Redes Neuronales Artificiales - Backpropagation
 
 **Contenido.**
 
+- [Unidad 2. Redes Neuronales Artificiales - Backpropagation](#unidad-2-redes-neuronales-artificiales---backpropagation)
+  - [Introducción](#introducción)
+    - [Redes Neuronales Múlticapa (M-L NNs)](#redes-neuronales-múlticapa-m-l-nns)
+  - [1. Funciones de error](#1-funciones-de-error)
+  - [2. Backpropagation](#2-backpropagation)
+  - [3. Algoritmos de retropagación modificados](#3-algoritmos-de-retropagación-modificados)
+    - [Regularización](#regularización)
+    - [Implementación de scikit-learn](#implementación-de-scikit-learn)
 
 **Objetivo.**
 
@@ -63,6 +71,6 @@ $J(w) = - \Sigma_{i=1}^n y^{[i]} \cdot log(a^{[i]}) + (1 -y^{[i]}) \cdot log(1-a
 ### Implementación de scikit-learn
 
 * [`Ejemplo MLP Scikit-Learn`](./code/mlp_sklrn_bcancer.ipynb)
+* [`Kfold`](./code/01_cross_validation.ipynb)
 
-
-[`Anterior`](../L02-1_perceptron/README.md) | [`Siguiente`](../README.md)
+[`Anterior`](../L02-1_perceptron/README.md) | [`Siguiente`](../L02-3_SOM/README.md)
