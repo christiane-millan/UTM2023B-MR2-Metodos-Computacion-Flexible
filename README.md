@@ -17,7 +17,13 @@ El estudiante conocerá las estrategias de computación no tradicional que tiene
 * [Backpropagation](./L02-NNets/README.md)
 * [Red Kohonen](./L02-3_SOM/README.md)
   
-### [Unidad 3. Lógica Difusa]()
+### [Unidad 3. Lógica Difusa
+
+* [Conjuntos difusos]
+* [Operaciones difusas]
+* [Lógica difusa]
+* [Inferencia difusa]
+* [Fusificadores y defusificadores]
 
 ### [Unidad 4. Algoritmos Genéticos]()
 
