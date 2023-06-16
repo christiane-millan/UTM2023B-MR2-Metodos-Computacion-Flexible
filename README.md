@@ -28,4 +28,6 @@ El estudiante conocerá las estrategias de computación no tradicional que tiene
 
 ### [Unidad 4. Algoritmos Genéticos]()
 
-### [Unidad 5. Tópicos Especiales]()
+### Unidad 5. Tópicos Especiales
+
+* [Expert Knowledge](./L05_topic/49.5_expert_knowledge.ipynb)
